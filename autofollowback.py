@@ -51,7 +51,7 @@ async def auto_follow_back(client, username):
                 try:
                     await client.follow_user(user_id=uid)
                     print(f"[+] Followed back {uid}")
-                    await asyncio.sleep(60)
+                    await asyncio.sleep(6)
                 except Exception as e:
                     print(f"[!] Error following {uid}: {e}")
         else:
